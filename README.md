@@ -44,3 +44,6 @@ Routing in routeconfig.cs register in global.asax RouteConfig.RegisterRoutes(Rou
 Scaffolding is an automatic code generation framework for ASP.NET web applications. Scaffolding reduces the time taken to develop a controller, view etc. in MVC framework. You can develop a customized scaffolding template using T4 templates as per your architecture and coding standard.
 
 action method must be public, can not be static cannot be overloaded.
+
+###### Global.asax :
+allows you to write code that runs in response to application level events, such as Application_BeginRequest, application_start, application_error, session_start, session_end etc.
