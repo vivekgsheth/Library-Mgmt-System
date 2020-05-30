@@ -58,3 +58,10 @@ Route defines the URL pattern and handler information. All the configured routes
   
   After configuring all the routes in RouteConfig class, you need to register it in the Application_Start() event in the Global.asax. So that it includes all your routes into RouteTable.
   
+## Controller
+
+ Controller handles incomming URL requests. MVC routing sends request to appropriate controller and action method based on URL and configured Routes.
+All the public methods in the Controller class are called Action methods.
+A Controller class must be derived from System.Web.Mvc.Controller class.
+A Controller class name must end with "Controller".
+New controller can be created using different scaffolding templates. You can create custom scaffolding template also.
