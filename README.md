@@ -81,6 +81,26 @@ Action selector is the attribute that can be applied to the action methods. It h
 2.NonAction
 3.ActionVerbs<br/>
 ActionName attribute allows us to specify a different action name than the method name.<br/>
+ActionVerbs are another Action Selectors which selects an action method based on request methods e.g POST, GET, PUT etc.
+Multiple action methods can have same name with different action verbs. Method overloading rules are applicable.
+Multiple action verbs can be applied to a single action method using AcceptVerbs attribute.<br/>
+For e.g [AcceptVerbs(HttpVerbs.Post | HttpVerbs.Get)] <br/>
+
+## View
+View is a User Interface which displays data and handles user interaction.<br/>
+Views folder contains separate folder for each controller.<br/>
+ASP.NET MVC supports Razor view engine in addition to traditional .aspx engine.<br/>
+Razor view files has .cshtml or .vbhtml extension.<br/>
+You can write a mix of html tags and server side code in razor view. Razor uses @ character for server side code instead of traditional <% %>.Razor view engine maximize the speed of writing code by minimizing the number of characters and keystrokes required when writing a view. <br/>
+
+## Model Binding
+Model binding automatically converts request values into a primitive or complex type object. Model binding is a two step process. First, it collects values from the incoming http request and second, populates primitive type or complex type with these values.<br/>
+Value providers are responsible for collecting values from request and Model Binders are responsible for populating values.<br/>
+ The [Bind] attribute will let you specify the exact properties a model binder should include or exclude in binding.
+ 
+ 
+
+
 
 
 
