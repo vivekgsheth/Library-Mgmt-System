@@ -71,4 +71,7 @@ New controller can be created using different scaffolding templates. You can cre
 Action method must be public. It cannot be private or protected <br/>
 Action method cannot be overloaded <br/>
 Action method cannot be a static method.<br/>
+ActionResult is a base class of all the result type which returns from Action method.<br/>
+Base Controller class contains methods that returns appropriate result type e.g. View(), Content(), File(), JavaScript() etc.<br/>
+Action method can include Nullable type parameters.<br/>
 
