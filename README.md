@@ -125,6 +125,35 @@ Check whether the model is valid before updating in the action method using Mode
 
 Enable client side validation to display error messages without postback effect in the browser.
 
+## ViewBag
+ViewBag can be useful when you want to transfer temporary data (which is not included in model) from the controller to the view. 
+
+ViewBag only transfers data from controller to view, not visa-versa. ViewBag values will be null if redirection occurs.
+
+ViewBag doesn't require typecasting while retriving values from it.
+
+ViewBag doesn't require typecasting while retriving values from it.
+
+## ViewData
+ViewData is a dictionary which can contain key-value pairs where each key must be string
+
+we must cast ViewData values to the appropriate data type.
+
+ViewData and ViewBag both use the same dictionary internally. So you cannot have ViewData Key matches with the property name of ViewBag, otherwise it will throw a runtime exception
+
+## TempData
+TempData in ASP.NET MVC can be used to store temporary data which can be used in the subsequent request. TempData will be cleared out after the completion of a subsequent request.
+
+TempData is useful when you want to transfer non-sensitive data from one action method to another action method of the same or a different controller as well as redirects. It is dictionary type which is derived from TempDataDictionary.
+
+TempData internally uses session to store the data. So the data must be serialized if you decide you to switch away from the default Session-State Mode, and use State Server ModeTempData internally uses session to store the data. So the data must be serialized if you decide you to switch away from the default Session-State Mode, and use State Server Mode
+
+Call TempData.Keep() to retain TempData values in a third consecutive request.
+
+
+
+
+
 
 
 
