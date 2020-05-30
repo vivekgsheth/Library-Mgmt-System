@@ -98,7 +98,19 @@ Model binding automatically converts request values into a primitive or complex 
 Value providers are responsible for collecting values from request and Model Binders are responsible for populating values.<br/>
  The [Bind] attribute will let you specify the exact properties a model binder should include or exclude in binding.
  
+## Razor Syntax
+
+Use @ to write server side code.
+Server side code block starts with @{* code * }
+Use @: or <text></<text> to display text from code block.
+if condition starts with @if{ }
+for loop starts with @for
+@model allows you to use model object anywhere in the view.
  
+ ## Html Helpers
+ 
+HtmlHelper class generates html elements using the model class object in razor view. It binds the model object to html elements to display value of model properties into html elements and also assigns the value of the html elements to the model properties while submitting web form.
+
 
 
 
