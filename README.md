@@ -111,8 +111,19 @@ for loop starts with @for
  
 HtmlHelper class generates html elements using the model class object in razor view. It binds the model object to html elements to display value of model properties into html elements and also assigns the value of the html elements to the model properties while submitting web form.
 
+## Validation
 
+ASP.NET MVC uses DataAnnotations attributes for validation.
 
+DataAnnotations attributes can be applied to the properties of the model class to indicate the kind of value the property will hold
+
+Use ValidationSummary to display all the error messages in the view.
+
+Use ValidationMessageFor or ValidationMessage helper method to display field level error messages in the view.
+
+Check whether the model is valid before updating in the action method using ModelState.IsValid.
+
+Enable client side validation to display error messages without postback effect in the browser.
 
 
 
