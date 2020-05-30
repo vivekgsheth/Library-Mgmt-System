@@ -75,3 +75,13 @@ ActionResult is a base class of all the result type which returns from Action me
 Base Controller class contains methods that returns appropriate result type e.g. View(), Content(), File(), JavaScript() etc.<br/>
 Action method can include Nullable type parameters.<br/>
 
+## Action Selectors
+Action selector is the attribute that can be applied to the action methods. It helps routing engine to select the correct action method to handle a particular request <br/>
+1.ActionName
+2.NonAction
+3.ActionVerbs<br/>
+ActionName attribute allows us to specify a different action name than the method name.<br/>
+
+
+
+
