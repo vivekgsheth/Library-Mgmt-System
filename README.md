@@ -60,8 +60,15 @@ Route defines the URL pattern and handler information. All the configured routes
   
 ## Controller
 
- Controller handles incomming URL requests. MVC routing sends request to appropriate controller and action method based on URL and configured Routes.
-All the public methods in the Controller class are called Action methods.
-A Controller class must be derived from System.Web.Mvc.Controller class.
-A Controller class name must end with "Controller".
+Controller handles incomming URL requests. MVC routing sends request to appropriate controller and action method based on URL and configured Routes.<br/>
+All the public methods in the Controller class are called Action methods.<br/>
+A Controller class must be derived from System.Web.Mvc.Controller class.<br/>
+A Controller class name must end with "Controller".<br/>
 New controller can be created using different scaffolding templates. You can create custom scaffolding template also.
+
+## Action methods
+
+Action method must be public. It cannot be private or protected <br/>
+Action method cannot be overloaded <br/>
+Action method cannot be a static method.<br/>
+
