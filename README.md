@@ -8,7 +8,7 @@ It's a project on Library Management System using Asp.net MVC Framework.
 
 
 
-#Freelancing-------------->sb98
+
 
 the freelancing project had two users: client and freelancer. A client can create contests and freelancer and view and submit solution for particular contests. When client click on create contest, get request is sent to controller and it displays create contest page. Once the details about contest are filled in, post request is sent to create method of contest controller and creates a contest object, fetches the client id from session and saves the data from request body in the model and redirects to contests of client . ViewBag is a dynamic object to pass the data from Controller to View. And, this will pass the data as a property of object ViewBag. Public ActionResult Index()
 {
